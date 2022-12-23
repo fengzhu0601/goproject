@@ -1,4 +1,4 @@
-package parse
+package douban
 
 import (
 	"fengzhu0601/goproject/go_spider/fake"
@@ -11,51 +11,8 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-type ListResult struct {
-	Code    int
-	Success bool
-	Msg     string
-	Content Content
-}
-type Content struct {
-	PositionResult PositionResult
-	PageNo         int
-	PageSize       int
-}
-type PositionResult struct {
-	Result     []Result
-	TotalCount int
-}
-type Result struct {
-	City              string
-	BusinessZones     []string
-	CompanyFullName   string
-	CompanyLabelList  []string
-	CompanyShortName  string
-	CompanySize       string
-	CreateTime        string
-	District          string
-	Education         string
-	FinanceStage      string
-	FirstType         string
-	IndustryField     string
-	IndustryLables    []string
-	JobNature         string
-	Latitude          string
-	Longitude         string
-	PositionAdvantage string
-	PositionId        int32
-	PositionLables    []string
-	PositionName      string
-	Salary            string
-	SecondType        string
-	Stationname       string
-	Subwayline        string
-	Linestaion        string
-	WorkYear          string
-}
-
 type DoubanMovie struct {
+	Id       int
 	Title    string
 	Subtitle string
 	Other    string
@@ -66,7 +23,6 @@ type DoubanMovie struct {
 	Star     string
 	Comment  string
 	Quote    string
-	Id       int
 }
 
 type Page struct {
