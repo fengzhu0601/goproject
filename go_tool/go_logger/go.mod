@@ -1,4 +1,4 @@
-module fengzhu0601/goproject/logger
+module github.com/fengzhu0601/goproject/logger
 
 go 1.18
 
