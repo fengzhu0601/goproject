@@ -14,3 +14,10 @@
 2022-12-28 01:45:04.897	[INFO]	[server/server.go:14]              	call hello[]
 2022-12-28 01:45:04.901	[INFO]	[server/main.go:37]                	method[/Server/Register LogUnaryServerInterceptor]
 2022-12-28 01:45:04.901	[INFO]	[server/main.go:45]                	method[/Server/Register AuthUnaryServerInterceptor]
+2022-12-28 01:47:54.757	[INFO]	[server/main.go:15]                	DefaultLogger init success
+2022-12-28 01:48:05.614	[INFO]	[server/main.go:37]                	method[/Server/Hello LogUnaryServerInterceptor]
+2022-12-28 01:48:05.616	[INFO]	[server/main.go:45]                	method[/Server/Hello AuthUnaryServerInterceptor]
+2022-12-28 01:48:05.616	[INFO]	[server/server.go:14]              	call hello[]
+2022-12-28 01:48:05.618	[INFO]	[server/main.go:37]                	method[/Server/Register LogUnaryServerInterceptor]
+2022-12-28 01:48:05.618	[INFO]	[server/main.go:45]                	method[/Server/Register AuthUnaryServerInterceptor]
+2022-12-28 01:48:05.618	[INFO]	[server/server.go:22]              	call register[]
