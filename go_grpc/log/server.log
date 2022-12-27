@@ -1,0 +1,16 @@
+{"level":"[INFO]","time":"2022-12-28 01:27:54.434","caller":"[server/main.go:13]                ","msg":"DefaultLogger init success"}
+{"level":"[INFO]","time":"2022-12-28 01:28:21.882","caller":"[server/server.go:14]              ","msg":"call hello[]"}
+2022-12-28 01:31:47.994	[INFO]	[server/main.go:13]                	DefaultLogger init success
+2022-12-28 01:32:05.803	[INFO]	[server/server.go:14]              	call hello[]
+2022-12-28 01:41:31.094	[INFO]	[server/main.go:15]                	DefaultLogger init success
+2022-12-28 01:41:42.900	[INFO]	[server/main.go:37]                	method[/Server/Hello 0x89d120]
+2022-12-28 01:41:42.901	[INFO]	[server/main.go:45]                	method[/Server/Hello 0x89d2a0]
+2022-12-28 01:41:42.901	[INFO]	[server/server.go:14]              	call hello[]
+2022-12-28 01:41:42.903	[INFO]	[server/main.go:37]                	method[/Server/Register 0x89d120]
+2022-12-28 01:41:42.903	[INFO]	[server/main.go:45]                	method[/Server/Register 0x89d2a0]
+2022-12-28 01:44:44.147	[INFO]	[server/main.go:15]                	DefaultLogger init success
+2022-12-28 01:45:04.892	[INFO]	[server/main.go:37]                	method[/Server/Hello LogUnaryServerInterceptor]
+2022-12-28 01:45:04.897	[INFO]	[server/main.go:45]                	method[/Server/Hello AuthUnaryServerInterceptor]
+2022-12-28 01:45:04.897	[INFO]	[server/server.go:14]              	call hello[]
+2022-12-28 01:45:04.901	[INFO]	[server/main.go:37]                	method[/Server/Register LogUnaryServerInterceptor]
+2022-12-28 01:45:04.901	[INFO]	[server/main.go:45]                	method[/Server/Register AuthUnaryServerInterceptor]
