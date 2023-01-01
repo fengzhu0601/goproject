@@ -47,7 +47,7 @@ var YearUrl = "http://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawN
 
 // 爬取某年的所有数据
 func GetYear(year int32) []CwlSsq {
-	url := fmt.Sprintf(YearUrl, "2022001", "2022100")
+	url := fmt.Sprintf(YearUrl, "2022002", "2022100")
 	fmt.Println(url)
 	resp := ParseUrl(url)
 	fmt.Println(resp)
@@ -68,7 +68,10 @@ func ParseUrl(url string) *http.Response {
 	//req.Header.Add("Connection", "keep-alive")
 	////req.Header.Add("Content-Length", "25")
 	//req.Header.Add("Content-Type", "text/json;charset=UTF-8") // 按utf-8的格式返回
-	req.Header.Add("User-Agent", fake.GetUserAgent())
+	//req.Header.Add("User-Agent", fake.GetUserAgent())
+	req.Header.Set("User-Agent", fake.GetUserAgent())
+	req.Header.Set("Host", "www.cwl.gov.cn")
+	req.Header.Set("Upgrade-Insecure-Requests", "1")
 
 	resp, err := client.Do(req)
 	if err != nil {
