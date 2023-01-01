@@ -1,2 +1,4 @@
 .idea
 go_grpc/log
+go_docker/containners-from-scratch/docker
+go_docker/containners-from-scratch/ubuntu-fs
