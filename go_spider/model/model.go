@@ -14,10 +14,16 @@ import (
 var (
 	DB *gorm.DB
 
+	//username string = "root"
+	//password string = "PetWorld2022"
+	//dbName   string = "spiders"
+	//dbHost   string = "119.91.152.112"
+	//dbPort   int32  = 3306
+
 	username string = "root"
-	password string = "PetWorld2022"
+	password string = "a123456"
 	dbName   string = "spiders"
-	dbHost   string = "119.91.152.112"
+	dbHost   string = "localhost"
 	dbPort   int32  = 3306
 )
 
