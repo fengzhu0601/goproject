@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"game/core/logger"
+	"github.com/fengzhu0601/goproject/go_tool/logger"
 	"html/template"
 	"net/http"
 	"os"

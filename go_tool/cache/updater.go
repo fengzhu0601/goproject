@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"game/core/cache/bulk"
-	"game/core/logger"
+	"cache/bulk"
+	"github.com/fengzhu0601/goproject/go_tool/logger"
 )
 
 type updater struct {

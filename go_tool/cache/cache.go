@@ -3,9 +3,10 @@ package cache
 import (
 	"context"
 	"fmt"
-	"game/core/logger"
 	"reflect"
 	"time"
+
+	"github.com/fengzhu0601/goproject/go_tool/logger"
 
 	gormlog "gorm.io/gorm/logger"
 

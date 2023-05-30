@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"game/core/cache/cargo"
-	"game/core/logger"
+	"cache/cargo"
+	"github.com/fengzhu0601/goproject/go_tool/logger"
 	"reflect"
 	"sync"
 	"sync/atomic"
