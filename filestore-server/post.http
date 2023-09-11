@@ -1,0 +1,8 @@
+POST http://localhost:8080/file/delete?filehash=d5c7b491f04e8bd9bed3c9b6995e913a9f0be6e8
+
+###
+GET http://localhost:8080/file/meta?filehash=d5c7b491f04e8bd9bed3c9b6995e913a9f0be6e8
+
+###
+POST http://localhost:8080/file/update?op=0&filehash=d5c7b491f04e8bd9bed3c9b6995e913a9f0be6e8&filename=111.txt
+
