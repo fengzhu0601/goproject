@@ -1,6 +1,7 @@
 package handler
 
 import (
+	dblayer "filestore_server/db"
 	"filestore_server/util"
 	"fmt"
 	"net/http"
@@ -33,16 +34,22 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Invalid parameter"))
 		return
 	}
+	fmt.Println(username, passwd)
 
-	//// 对密码进行加盐及取Sha1值加密
-	//encPasswd := util.Sha1([]byte(passwd + pwdSalt))
-	//// 将用户信息注册到用户表中
-	//suc := dblayer.UserSignup(username, encPasswd)
-	//if suc {
-	//	w.Write([]byte("SUCCESS"))
-	//} else {
-	//	w.Write([]byte("FAILED"))
-	//}
+	// 对密码进行加盐及取Sha1值加密
+	encPasswd := util.Sha1([]byte(passwd + pwdSalt))
+	// 将用户信息注册到用户表中
+	suc := dblayer.UserSignup(username, encPasswd)
+
+	if suc {
+		//w.Write([]byte("SUCCESS"))
+		resp := util.RespMsg{
+			Code: 10000,
+		}
+		w.Write(resp.JSONBytes())
+	} else {
+		w.Write([]byte("FAILED"))
+	}
 }
 
 // SignInHandler : 登录接口
