@@ -1,0 +1,6 @@
+# 1. 模拟一次RPC调用的过程就是向该链接发送一个json字符串：
+$ curl localhost:1234/jsonrpc -X POST \
+    --data '{"method":"HelloService.Hello","params":["hello"],"id":0}'
+
+# 2. 查看结果
+{"id":0,"result":"hello:hello","error":null}

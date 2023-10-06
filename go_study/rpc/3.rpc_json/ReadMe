@@ -1,0 +1,10 @@
+# 1. 通过 nc -l 1234 启动一个TCP服务
+# 2. 然后启动客户端执行一次RPC调用
+# 3. 发现nc输出结果
+{"method":"HelloService.Hello","params":["hello"],"id":0}
+
+# 1. 启动服务端
+# 2. 直接向架设了RPC服务的TCP服务器发送json数据模拟RPC方法调用:
+$ echo -e '{"method":"HelloService.Hello","params":["hello"],"id":1}' | nc localhost 1234
+# 3. 查看命令输出结果
+{"id":1,"result":"hello:hello","error":null}
