@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<movie>
+    <title>{{.Title}}</title>
+    <originaltitle>{{.OriginalTitle}}</originaltitle>
+    <plot>{{.Plot}}</plot>
+    <genre>{{.Genre}}</genre>
+    <country>日本</country>
+    <director>{{.Director}}</director>
+    <year>{{.Year}}</year>
+    <runtime>{{.Runtime}}</runtime>
+    {{range .Actors}}
+    <actor>
+        <name>{{.Name}}</name>
+    </actor>
+    {{end}}
+</movie>
