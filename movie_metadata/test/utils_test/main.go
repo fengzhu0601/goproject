@@ -24,7 +24,19 @@ func TestInsertHyphen(t *testing.T) {
 	fmt.Println(output)
 }
 
+func TestIsValidDirName(t *testing.T) {
+	input := "DV-1453"
+	expectedOutput := true
+
+	output := utils.IsValidDirName(input)
+
+	if output != expectedOutput {
+		t.Errorf("Expected %v, but got %v", expectedOutput, output)
+	}
+}
+
 func main() {
 	// 运行测试函数
-	TestInsertHyphen(nil)
+	//TestInsertHyphen(nil)
+	TestIsValidDirName(nil)
 }

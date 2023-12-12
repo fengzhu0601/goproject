@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	DIR = "/mnt/z/sata1-13971310804/小电影/Japan/r日下部加奈"
-	//DIR = "/mnt/z/sata1-13971310804/小电影/Temp"
+	//DIR = "/mnt/z/sata1-13971310804/小电影/Japan/julia"
+	DIR = "/mnt/z/sata1-13971310804/小电影/Japan/松下纱荣子"
 )
 
 func ExtractAndUpperCase(input string) (string, error) {
@@ -47,7 +47,7 @@ func GetFileNameWithoutExtension(fileName string) string {
 }
 
 // 判断目录下是否有.jpg格式的文件
-func HasJPEGFile(dir string) bool {
+func HasJPEGFile(dir, format string) bool {
 	dirFiles, err := ioutil.ReadDir(dir)
 	if err != nil {
 		fmt.Println(err)
@@ -58,7 +58,7 @@ func HasJPEGFile(dir string) bool {
 		if file.IsDir() {
 			continue
 		}
-		if GetFileExtension(file.Name()) == ".nfo" {
+		if GetFileExtension(file.Name()) == format {
 			return true
 		}
 	}
@@ -103,4 +103,10 @@ func MoveFilesInDirectory(directoryPath string) {
 			}
 		}
 	}
+}
+
+// 判断目录名是否符合规则
+func IsValidDirName(dirName string) bool {
+	match, _ := regexp.MatchString("^[a-zA-Z]+-[0-9]+$", dirName)
+	return match
 }
