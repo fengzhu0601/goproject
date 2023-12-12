@@ -6,8 +6,8 @@ import (
 	"net/url"
 )
 
-func CreateProxyClient() *http.Client {
-	proxyUrl, err := url.Parse("http://58.220.95.55:9400")
+func CreateProxyClient(ip, port string) *http.Client {
+	proxyUrl, err := url.Parse("http://" + ip + ":" + port)
 	if err != nil {
 		log.Fatal(err)
 	}
