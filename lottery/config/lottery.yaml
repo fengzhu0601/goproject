@@ -1,0 +1,13 @@
+# 数据库配置
+DBHost: "192.168.3.12"
+DBPort: 3306
+DBUser: "root"
+DBName: "lottery"
+DBPass: "a123456"
+DBEncode: "utf8mb4"
+DBPool_size: 8 # 数据库连接池数量
+DBTimeout: 10 # 数据库默认超时时间
+UpdateGap: 3 # 批量更新频率-秒
+UpdateSize: 1000 # 每次批量更新的最大数据条数
+GCSeconds: 600 # 玩家下线n秒后进行内存回收
+RWAnalyse: true # 是否启动读写分析(开启有性能损耗)
