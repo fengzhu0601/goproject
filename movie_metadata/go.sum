@@ -5,8 +5,6 @@ github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEq
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/disintegration/imaging v1.6.2 h1:w1LecBlG2Lnp8B3jk5zSuNqd7b4DXhcjwek1ei82L+c=
 github.com/disintegration/imaging v1.6.2/go.mod h1:44/5580QXChDfwIclfc/PCwrr44amcmDAg8hxG0Ewe4=
-github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212104915-fdd392b8a6c2 h1:iw6HtsyoL54PgJs2o0mTifrjfcHkAxghspx99xIWqUc=
-github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212104915-fdd392b8a6c2/go.mod h1:pt3jraBvnvAsDp3Em2ZccWpe8o1L+fHDJ/HNU1OiMRo=
 github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212114152-e1a574592cc8 h1:GNB8hjaC15z4fm7eJ1U7emFKdkIbNvj2BrtHId9GBkw=
 github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212114152-e1a574592cc8/go.mod h1:pt3jraBvnvAsDp3Em2ZccWpe8o1L+fHDJ/HNU1OiMRo=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
