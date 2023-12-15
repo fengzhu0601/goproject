@@ -3,9 +3,11 @@ module lottery
 go 1.20
 
 require (
-	github.com/fengzhu0601/gotools/cache v0.0.0-20231215125456-d30ba92859da
-	github.com/fengzhu0601/gotools/config v0.0.0-20231215124733-bf07184a9e18
-	github.com/fengzhu0601/gotools/logger v0.0.0-20231215124733-bf07184a9e18
+	github.com/fengzhu0601/gotools/cache v0.0.0-20231215144325-31fcfe6ecbeb
+	github.com/fengzhu0601/gotools/config v0.0.0-20231215125725-74c3c9d92193
+	github.com/fengzhu0601/gotools/logger v0.0.0-20231215144325-31fcfe6ecbeb
+	gorm.io/driver/mysql v1.5.2
+	gorm.io/gorm v1.25.5
 )
 
 require (
@@ -33,6 +35,4 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/mysql v1.5.2 // indirect
-	gorm.io/gorm v1.25.5 // indirect
 )
