@@ -7,8 +7,8 @@ import (
 
 func main() {
 
-	common.RenameFile(utils.DIR)
-	common.CreateDir(utils.DIR)
+	//common.RenameFile(utils.DIR)
+	//common.CreateDir(utils.DIR)
 	common.GenMoviesNfo(utils.DIR)
 
 	//utils.MoveFilesInDirectory(utils.DIR)

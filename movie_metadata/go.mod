@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/disintegration/imaging v1.6.2
-	github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212102107-aeac1fa36537
+	github.com/fengzhu0601/goproject/go_tool/spider v0.0.0-20231212114152-e1a574592cc8
 )
 
 require (

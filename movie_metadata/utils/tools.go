@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	//DIR = "/mnt/z/sata1-13971310804/小电影/Japan/julia"
-	DIR = "/mnt/z/sata1-13971310804/小电影/Japan/松下纱荣子"
+	DIR = "/mnt/z/sata1-13971310804/小电影/Japan"
+	//DIR = "/mnt/z/sata1-13971310804/小电影/Temp/C"
 )
 
 func ExtractAndUpperCase(input string) (string, error) {

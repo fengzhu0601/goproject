@@ -18,6 +18,9 @@ func GetDoc(url string) *goquery.Document {
 	}
 	request.Header.Set("User-Agent", spider.GetUserAgent())
 
+	//ip := "127.0.0.1"
+	//port := "8080"
+	//client := spider.CreateProxyClient(ip, port)
 	client := &http.Client{}
 	response, err := client.Do(request)
 	if err != nil {
@@ -36,3 +39,17 @@ func GetDoc(url string) *goquery.Document {
 	}
 	return doc
 }
+
+//func CreateProxyClient(ip, port string) *http.Client {
+//	return &http.Client{}
+//	proxyUrl, err := url.Parse("http://" + ip + ":" + port)
+//	if err != nil {
+//		log.Fatal(err)
+//	}
+//	transport := &http.Transport{
+//		Proxy: http.ProxyURL(proxyUrl),
+//	}
+//	return &http.Client{
+//		Transport: transport,
+//	}
+//}

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"movie_metadata/utils"
+	"time"
 )
 
 // 获取目录下每个文件夹的图片信息
@@ -16,7 +17,7 @@ func GenMoviesNfo(dir string) {
 		// 判断是否是文件夹
 		if file.IsDir() {
 			if utils.IsValidDirName(file.Name()) {
-				//time.Sleep(10 * time.Second)
+				time.Sleep(3 * time.Second)
 				// 获取文件夹下图片信息
 				href := utils.GetMovieUrl(file.Name())
 				if href == "" {
