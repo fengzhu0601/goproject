@@ -1,7 +1,6 @@
 package main
 
 import (
-	"movie_metadata/common"
 	"movie_metadata/utils"
 )
 
@@ -9,7 +8,8 @@ func main() {
 
 	//common.RenameFile(utils.DIR)
 	//common.CreateDir(utils.DIR)
-	common.GenMoviesNfo(utils.DIR)
+	// common.GenMoviesNfo(utils.DIR)
+	utils.GetNameList()
 
 	//utils.MoveFilesInDirectory(utils.DIR)
 
